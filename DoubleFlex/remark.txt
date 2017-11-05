@@ -1,0 +1,3 @@
+两列自适应布局
+http://www.cnblogs.com/xiaohuochai/p/5454232.html
+00 缺点：它会优先考虑左侧宽度，如果右侧宽度太宽则被裁切了

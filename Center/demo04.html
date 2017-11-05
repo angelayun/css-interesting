@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>absolute</title>
+  <style>
+    .parent {
+      position: relative;
+    }
+
+    .child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 50px;
+      width: 80px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent" style="background-color: lightgray; width:200px; height:100px; ">
+    <div class="child" style="background-color: lightblue;">测试文字</div>
+  </div>
+</body>
+
+</html>
