@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>float + margin + (fix)</title>
+  <style>
+    body,
+    p {
+      margin: 0;
+    }
+
+    .parentWrap {
+      overflow: hidden;
+    }
+
+    .parent {
+      overflow: hidden;
+      margin-right: -20px;
+    }
+
+    .child {
+      float: left;
+      width: 25%;
+    }
+
+    .in {
+      margin-right: 20px;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parentWrap">
+    <div class="parent" style="background-color: lightgrey;">
+      <div class="child" style="background-color: blue;">
+        <div class="in" style="background-color: lightblue;">1</div>
+      </div>
+      <div class="child" style="background-color: green;">
+        <div class="in" style="background-color: lightgreen;">2</div>
+      </div>
+      <div class="child" style="background-color: orange;">
+        <div class="in" style="background-color: lightsalmon;">3</div>
+      </div>
+      <div class="child" style="background-color: red;">
+        <div class="in" style="background-color: pink;">4</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
