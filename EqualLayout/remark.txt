@@ -1,0 +1,4 @@
+等高布局
+http://www.cnblogs.com/xiaohuochai/p/5457127.html
+
+00 左右两侧元素的内容高度不能大于中间元素内容高度，否则无法撑开容器高度

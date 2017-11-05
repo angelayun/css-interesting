@@ -1,0 +1,5 @@
+两列布局
+http://www.cnblogs.com/xiaohuochai/p/5452865.html
+
+00 当右侧容器中有元素清除浮动时，会使该元素不与左侧浮动元素同行，从而出现文字下沉现象
+.right p{clear:both}
