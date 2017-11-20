@@ -1,0 +1,5 @@
+所有伪类选择器在 querySelector 中都不起作用，而不只是 nth 系列
+http://www.cnblogs.com/Wayou/p/css3-nth-selector.html
+
+不为人知的前端系列
+http://www.cnblogs.com/Wayou/p/things_you_dont_know_about_frontend.html

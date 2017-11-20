@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <div>
+      <p>1</p>
+      <p class="foo">2</p>
+      <p class="foo" tip='bbb'>3</p>
+      <p class="foo" tip='aaa'>4</p>
+      <p class="foo">5</p>
+    </div>
+  </div>
+</body>
+<script>
+  window.onload = function () {
+    console.log(document.querySelector('p.foo'))
+    console.log(document.querySelector('p.foo:nth-of-type(2)'))
+    console.log(document.querySelector('p:nth-of-type(2)'))
+  }
+</script>
+
+</html>
