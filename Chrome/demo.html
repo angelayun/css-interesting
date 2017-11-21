@@ -6,10 +6,413 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    body,
+    html,
+    ul,
+    li,
+    div {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    body {
+      font-family: helvetica, sans-serif, arial;
+    }
+
+    .panel {
+      width: 100%;
+      background-color: #fff;
+      padding: 20px 10px 5px;
+      box-sizing: border-box;
+    }
+
+
+
+    .panel h1 {
+      font-size: 17px;
+      color: #313131;
+      line-height: 26px;
+      height: 26px;
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .panel .subTitle {
+      color: #999;
+      text-align: left;
+    }
+
+    .panel .count {
+      float: right;
+    }
+
+    .panel .count img {
+      width: 26px;
+      vertical-align: -7px;
+    }
+
+    .panel .content {
+      font-size: 15px;
+      color: #313131;
+      line-height: 21px;
+      text-align: left;
+      margin: 10px 0;
+    }
+
+    .container {
+      width: 100%;
+      background-color: #eceef3;
+      padding-top: 15px;
+      position: relative;
+    }
+
+    .container .comment {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .container .comment .title {
+      font-size: 13px;
+      line-height: 30px;
+      height: 30px;
+      color: #a5a5a5;
+      text-align: left;
+    }
+
+    .container .item {
+      display: flex;
+    }
+
+    .container .item .leftPanel {
+      flex-basis: 44px;
+    }
+
+    .container .item .imgPanel {
+      background-color: red;
+      border-radius: 50%;
+      display: inline-block;
+      height: 44px;
+      width: 44px;
+    }
+
+    .container .item .rightPanel {
+      flex: 1;
+      padding-left: 10px
+    }
+
+    .container .item .rightTop {
+      font-size: 15px;
+      color: #313131;
+    }
+
+
+    .container .rightTop .tags {
+      font-size: 12px;
+      color: #ffffff;
+    }
+
+    .container .tags .tag {
+      background: #ffadc2;
+      padding: 0 5px;
+      border-radius: 5px;
+      height: 20px;
+      line-height: 20px;
+    }
+
+    .container .tags .tag.blue {
+      background-color: #9ad4ff;
+    }
+
+    .container .rightTop .date {
+      float: right;
+      margin-top: -20px;
+      font-size: 13px;
+      color: #a5a5a5;
+      letter-spacing: 0;
+      text-align: right;
+    }
+
+    .container .quote {
+      background: #f6f7fa;
+      border-radius: 3px;
+      color: #313131;
+      padding: 10px;
+      font-size: 13px;
+      margin-top: 12px;
+    }
+
+
+    .container .quote .content {
+      color: #a5a5a5;
+      margin-top: 5px;
+    }
+
+    .container .replay {
+      font-size: 14px;
+      color: #a5a5a5;
+      margin-top: 8px;
+      line-height: 20px;
+    }
+
+    .item+.item {
+      margin-top: 20px;
+    }
+
+    .container .contentContainer {
+      font-size: 15px;
+      color: #a5a5a5;
+      margin-top: 10px;
+    }
+
+    .aaa {
+      position: absolute;
+      bottom: 0;
+      height: 90vh;
+      width: 100%;
+      background-color: rgba(0, 0, 8, .3)
+    }
+  </style>
 </head>
 
 <body>
+  <div class="panel">
+    <h1>这是一段标题，简单的几个字，文字超出折行显示这是一段标题，简单的几个字，文字超出折行显示</h1>
+    <div class="subTitle">
+      <span>2017/11/07</span>
+      <span class="count">
+        <img src='./view2.png' />251</span>
+    </div>
+    <div class="content">
+      微信朋友圈原生支持9张图+一段文字，字数是有长度限制的，而且一旦过长，文字就会被折叠。如果想在朋友圈发表长图文，一般有以下几种。
+    </div>
 
+  </div>
+  <div class="container">
+    <div class="comment">
+      <div class="title">评论&nbsp;&nbsp;120</div>
+      <ul>
+        <li class="item">
+          <div class="leftPanel">
+            <span class="imgPanel"></span>
+          </div>
+          <div class="rightPanel">
+            <div class="rightTop">
+              <div class='titlePanel'>
+                <div>苏珊</div>
+                <div class="tags">
+                  <span class="tag">28</span>
+                  <span class="tag">M</span>
+                </div>
+              </div>
+              <div class="date">7分钟前</div>
+            </div>
+            <div class="quote">
+              <div>贝克汉姆</div>
+              <div class="content">校服是我和她唯一穿过的情侣装，毕业照是我和她唯一的合影。</div>
+            </div>
+            <div class="replay">回答的相当贴切！</div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="leftPanel">
+            <span class="imgPanel"></span>
+          </div>
+          <div class="rightPanel">
+            <div class="rightTop">
+              <div class='titlePanel'>
+                <div>贝克汉姆</div>
+                <div class="tags">
+                  <span class="tag blue">28</span>
+                  <span class="tag blue">M</span>
+                </div>
+              </div>
+              <div class="date">12分钟前</div>
+            </div>
+            <div class="contentContainer">
+              校服是我和她唯一穿过的情侣装，毕业照是我和她唯一的合影。
+            </div>
+
+          </div>
+        </li>
+        <li class="item">
+          <div class="leftPanel">
+            <span class="imgPanel"></span>
+          </div>
+          <div class="rightPanel">
+            <div class="rightTop">
+              <div class='titlePanel'>
+                <div>苏珊</div>
+                <div class="tags">
+                  <span class="tag">28</span>
+                  <span class="tag">M</span>
+                </div>
+              </div>
+              <div class="date">7分钟前</div>
+            </div>
+            <div class="quote">
+              <div>贝克汉姆</div>
+              <div class="content">校服是我和她唯一穿过的情侣装，毕业照是我和她唯一的合影。</div>
+            </div>
+            <div class="replay">回答的相当贴切！</div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="leftPanel">
+            <span class="imgPanel"></span>
+          </div>
+          <div class="rightPanel">
+            <div class="rightTop">
+              <div class='titlePanel'>
+                <div>贝克汉姆</div>
+                <div class="tags">
+                  <span class="tag blue">28</span>
+                  <span class="tag blue">M</span>
+                </div>
+              </div>
+              <div class="date">12分钟前</div>
+            </div>
+            <div class="contentContainer">
+              校服是我和她唯一穿过的情侣装，毕业照是我和她唯一的合影。
+            </div>
+
+          </div>
+        </li>
+        <li class="item">
+          <div class="leftPanel">
+            <span class="imgPanel"></span>
+          </div>
+          <div class="rightPanel">
+            <div class="rightTop">
+              <div class='titlePanel'>
+                <div>苏珊</div>
+                <div class="tags">
+                  <span class="tag">28</span>
+                  <span class="tag">M</span>
+                </div>
+              </div>
+              <div class="date">7分钟前</div>
+            </div>
+            <div class="quote">
+              <div>贝克汉姆</div>
+              <div class="content">校服是我和她唯一穿过的情侣装，毕业照是我和她唯一的合影。</div>
+            </div>
+            <div class="replay">回答的相当贴切！</div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="leftPanel">
+            <span class="imgPanel"></span>
+          </div>
+          <div class="rightPanel">
+            <div class="rightTop">
+              <div class='titlePanel'>
+                <div>贝克汉姆</div>
+                <div class="tags">
+                  <span class="tag blue">28</span>
+                  <span class="tag blue">M</span>
+                </div>
+              </div>
+              <div class="date">12分钟前</div>
+            </div>
+            <div class="contentContainer">
+              校服是我和她唯一穿过的情侣装，毕业照是我和她唯一的合影。
+            </div>
+
+          </div>
+        </li>
+        <li class="item">
+          <div class="leftPanel">
+            <span class="imgPanel"></span>
+          </div>
+          <div class="rightPanel">
+            <div class="rightTop">
+              <div class='titlePanel'>
+                <div>苏珊</div>
+                <div class="tags">
+                  <span class="tag">28</span>
+                  <span class="tag">M</span>
+                </div>
+              </div>
+              <div class="date">7分钟前</div>
+            </div>
+            <div class="quote">
+              <div>贝克汉姆</div>
+              <div class="content">校服是我和她唯一穿过的情侣装，毕业照是我和她唯一的合影。</div>
+            </div>
+            <div class="replay">回答的相当贴切！</div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="leftPanel">
+            <span class="imgPanel"></span>
+          </div>
+          <div class="rightPanel">
+            <div class="rightTop">
+              <div class='titlePanel'>
+                <div>贝克汉姆</div>
+                <div class="tags">
+                  <span class="tag blue">28</span>
+                  <span class="tag blue">M</span>
+                </div>
+              </div>
+              <div class="date">12分钟前</div>
+            </div>
+            <div class="contentContainer">
+              校服是我和她唯一穿过的情侣装，毕业照是我和她唯一的合影。
+            </div>
+
+          </div>
+        </li>
+        <li class="item">
+          <div class="leftPanel">
+            <span class="imgPanel"></span>
+          </div>
+          <div class="rightPanel">
+            <div class="rightTop">
+              <div class='titlePanel'>
+                <div>苏珊</div>
+                <div class="tags">
+                  <span class="tag">28</span>
+                  <span class="tag">M</span>
+                </div>
+              </div>
+              <div class="date">7分钟前</div>
+            </div>
+            <div class="quote">
+              <div>贝克汉姆</div>
+              <div class="content">校服是我和她唯一穿过的情侣装，毕业照是我和她唯一的合影。</div>
+            </div>
+            <div class="replay">回答的相当贴切！</div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="leftPanel">
+            <span class="imgPanel"></span>
+          </div>
+          <div class="rightPanel">
+            <div class="rightTop">
+              <div class='titlePanel'>
+                <div>贝克汉姆</div>
+                <div class="tags">
+                  <span class="tag blue">28</span>
+                  <span class="tag blue">M</span>
+                </div>
+              </div>
+              <div class="date">12分钟前</div>
+            </div>
+            <div class="contentContainer">
+              校服是我和她唯一穿过的情侣装，毕业照是我和她唯一的合影。
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="aaa"></div>
+  </div>
 </body>
 
 </html>
